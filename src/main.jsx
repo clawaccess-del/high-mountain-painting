@@ -20,11 +20,11 @@ const services = [
 const areas = ['Medford', 'Central Point', 'Phoenix', 'Talent', 'Jacksonville', 'White City', 'Eagle Point', 'Ashland', 'Grants Pass', 'Southern Oregon'];
 
 const projectImages = [
-  ['/images/painted-home-1.png', 'Freshly painted Southern Oregon home with crisp trim'],
-  ['/images/painted-home-2.png', 'Updated exterior paint on a welcoming Rogue Valley home'],
-  ['/images/painted-home-3.png', 'Clean residential repaint with warm curb appeal'],
-  ['/images/painted-home-4.png', 'Finished exterior painting with detailed trim work'],
-  ['/images/painted-home-5.png', 'Beautifully painted home exterior ready for the season'],
+  ['/images/painted-home-1.png', 'Freshly painted sage craftsman bungalow with cream trim'],
+  ['/images/painted-home-2.png', 'Fresh white modern farmhouse with black trim'],
+  ['/images/painted-home-3.png', 'Warm taupe ranch home with crisp trim and shutters'],
+  ['/images/painted-home-4.png', 'Blue-gray two-story home with bright white trim'],
+  ['/images/painted-home-5.png', 'Forest green Northwest cottage with cream trim'],
 ];
 
 function App() {
