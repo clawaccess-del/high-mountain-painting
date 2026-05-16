@@ -58,7 +58,7 @@ function App() {
       <header className="site-header">
         <div className="top-logo-row">
           <a className="brand" href="#top" aria-label="High Mountain Painting home">
-            <img className="brand-logo" src="/images/high-mountain-logo-from-card.jpg" alt="High Mountain Painting logo" />
+            <img className="brand-logo" src="/images/high-mountain-red-script-logo.jpg" alt="High Mountain Painting logo" />
           </a>
         </div>
         <div className="header-nav-row">
@@ -91,7 +91,7 @@ function App() {
             <img src={projectImages[0].src} alt={projectImages[0].alt} />
           </div>
           <div className="quote-card logo-quote">
-            <img src="/images/high-mountain-brand-card-crop.jpg" alt="High Mountain Painting logo from business card" />
+            <img src="/images/high-mountain-red-script-logo.jpg" alt="High Mountain Painting red script logo from business card" />
             <p>Home of all your painting needs</p>
             <a href={phoneHref}>{phone}</a>
             <small>Medford, OR • CCB #96858</small>
