@@ -2,6 +2,9 @@
 
 Branded one-page website for High Mountain Painting in Medford, Oregon.
 
+Live URL: https://high-mountain-painting.vercel.app/
+GitHub: https://github.com/clawaccess-del/high-mountain-painting
+
 ## Business details from supplied card
 
 - Owners: Travis and Sheryl Tibbets
