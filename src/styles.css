@@ -38,7 +38,7 @@ main { overflow: hidden; }
   z-index: 20;
   display: grid;
   gap: .7rem;
-  padding: .75rem clamp(1rem, 4vw, 4rem) .9rem;
+  padding: .85rem clamp(1rem, 4vw, 4rem) 1rem;
   background: linear-gradient(90deg, rgba(13,14,15,.96), rgba(8,47,66,.96));
   backdrop-filter: blur(18px);
   border-bottom: 4px solid var(--red);
@@ -61,8 +61,8 @@ main { overflow: hidden; }
 }
 .brand-logo {
   display: block;
-  width: clamp(16rem, 36vw, 27rem);
-  height: clamp(4.2rem, 7vw, 6rem);
+  width: clamp(17rem, 40vw, 31rem);
+  height: clamp(7.4rem, 12vw, 10.5rem);
   object-fit: contain;
   object-position: center;
   border-radius: .35rem;
@@ -224,7 +224,7 @@ h3 { font-size: 1.2rem; letter-spacing: -.03em; margin-bottom: .6rem; }
 .logo-quote img {
   display: block;
   width: 100%;
-  max-height: 8rem;
+  max-height: 10.5rem;
   object-fit: contain;
   object-position: center;
   border-radius: .55rem;
@@ -405,7 +405,7 @@ footer a { color: var(--cream); }
 }
 @media (max-width: 620px) {
   .site-header { padding-inline: .75rem; }
-  .brand-logo { width: min(92vw, 22rem); height: 4.8rem; }
+  .brand-logo { width: min(94vw, 25rem); height: 8.2rem; }
   .header-call { display: none; }
   h1 { font-size: clamp(3.1rem, 17vw, 4.5rem); }
   .service-grid { grid-template-columns: 1fr; }
