@@ -200,6 +200,18 @@ function Header() {
         <a className="brand text-brand" href="/" aria-label="High Mountain Painting home">
           <span className="brand-name">High Mountain Painting</span>
         </a>
+        <details className="mobile-menu">
+          <summary aria-label="Open navigation menu">Menu</summary>
+          <div className="mobile-menu-panel">
+            <a href="/">Home</a>
+            <a href="/#services">Services</a>
+            {servicePages.map((service) => (
+              <a href={`/services/${service.slug}`} key={service.slug}>{service.nav}</a>
+            ))}
+            <a href="/#contact">Contact</a>
+            <a href={phoneHref}>Call {phone}</a>
+          </div>
+        </details>
       </div>
       <div className="header-nav-row">
         <nav aria-label="Main navigation">
