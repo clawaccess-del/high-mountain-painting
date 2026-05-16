@@ -19,6 +19,14 @@ const services = [
 
 const areas = ['Medford', 'Central Point', 'Phoenix', 'Talent', 'Jacksonville', 'White City', 'Eagle Point', 'Ashland', 'Grants Pass', 'Southern Oregon'];
 
+const projectImages = [
+  ['/images/painted-home-1.png', 'Freshly painted Southern Oregon home with crisp trim'],
+  ['/images/painted-home-2.png', 'Updated exterior paint on a welcoming Rogue Valley home'],
+  ['/images/painted-home-3.png', 'Clean residential repaint with warm curb appeal'],
+  ['/images/painted-home-4.png', 'Finished exterior painting with detailed trim work'],
+  ['/images/painted-home-5.png', 'Beautifully painted home exterior ready for the season'],
+];
+
 function App() {
   return (
     <main>
@@ -50,12 +58,9 @@ function App() {
             <span>Rogue Valley local</span>
           </div>
         </div>
-        <div className="hero-card" aria-label="High Mountain Painting brand card">
-          <div className="mountain-scene">
-            <span className="sun"></span>
-            <span className="peak peak-one"></span>
-            <span className="peak peak-two"></span>
-            <span className="roller"></span>
+        <div className="hero-card" aria-label="High Mountain Painting featured painted home">
+          <div className="featured-home">
+            <img src={projectImages[0][0]} alt={projectImages[0][1]} />
           </div>
           <div className="quote-card">
             <p>Home of all your painting needs</p>
@@ -86,6 +91,21 @@ function App() {
               <h3>{title}</h3>
               <p>{text}</p>
             </article>
+          ))}
+        </div>
+      </section>
+
+      <section className="portfolio section-pad" aria-label="Freshly painted home examples">
+        <div className="section-heading">
+          <p className="section-kicker">Fresh finish inspiration</p>
+          <h2>Realistic painted-home visuals for the kind of clean curb appeal customers want.</h2>
+        </div>
+        <div className="portfolio-grid">
+          {projectImages.map(([src, alt], index) => (
+            <figure className={index === 0 ? 'portfolio-card large' : 'portfolio-card'} key={src}>
+              <img src={src} alt={alt} />
+              <figcaption>{index === 0 ? 'Exterior repaint inspiration' : 'Clean lines, refreshed color, and crisp trim'}</figcaption>
+            </figure>
           ))}
         </div>
       </section>
