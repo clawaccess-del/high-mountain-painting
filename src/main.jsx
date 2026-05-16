@@ -20,11 +20,36 @@ const services = [
 const areas = ['Medford', 'Central Point', 'Phoenix', 'Talent', 'Jacksonville', 'White City', 'Eagle Point', 'Ashland', 'Grants Pass', 'Southern Oregon'];
 
 const projectImages = [
-  ['/images/painted-home-1.png', 'Freshly painted sage craftsman bungalow with cream trim'],
-  ['/images/painted-home-2.png', 'Fresh white modern farmhouse with black trim'],
-  ['/images/painted-home-3.png', 'Warm taupe ranch home with crisp trim and shutters'],
-  ['/images/painted-home-4.png', 'Blue-gray two-story home with bright white trim'],
-  ['/images/painted-home-5.png', 'Forest green Northwest cottage with cream trim'],
+  {
+    src: '/images/painted-home-1.png',
+    alt: 'Freshly painted sage craftsman bungalow with cream trim',
+    title: 'Craftsman color refresh',
+    caption: 'Sage siding and cream trim bring out porch detail without making the home feel too dark.',
+  },
+  {
+    src: '/images/painted-home-2.png',
+    alt: 'Fresh white modern farmhouse with black trim',
+    title: 'Modern farmhouse contrast',
+    caption: 'White siding with black trim gives a cleaner profile and makes the rooflines feel sharper.',
+  },
+  {
+    src: '/images/painted-home-3.png',
+    alt: 'Warm taupe ranch home with crisp trim and shutters',
+    title: 'Ranch home curb appeal',
+    caption: 'Warm neutral siding updates a single-story exterior while keeping it natural for the neighborhood.',
+  },
+  {
+    src: '/images/painted-home-4.png',
+    alt: 'Blue-gray two-story home with bright white trim',
+    title: 'Two-story trim definition',
+    caption: 'Blue-gray siding and bright trim help windows, fascia, and entry details stand out from the street.',
+  },
+  {
+    src: '/images/painted-home-5.png',
+    alt: 'Forest green Northwest cottage with cream trim',
+    title: 'Cottage exterior warmth',
+    caption: 'Deep green paint, soft trim, and wood accents create a grounded Northwest look with personality.',
+  },
 ];
 
 function App() {
@@ -60,7 +85,7 @@ function App() {
         </div>
         <div className="hero-card" aria-label="High Mountain Painting featured painted home">
           <div className="featured-home">
-            <img src={projectImages[0][0]} alt={projectImages[0][1]} />
+            <img src={projectImages[0].src} alt={projectImages[0].alt} />
           </div>
           <div className="quote-card">
             <p>Home of all your painting needs</p>
@@ -101,10 +126,13 @@ function App() {
           <h2>Realistic painted-home visuals for the kind of clean curb appeal customers want.</h2>
         </div>
         <div className="portfolio-grid">
-          {projectImages.map(([src, alt], index) => (
-            <figure className={index === 0 ? 'portfolio-card large' : 'portfolio-card'} key={src}>
-              <img src={src} alt={alt} />
-              <figcaption>{index === 0 ? 'Exterior repaint inspiration' : 'Clean lines, refreshed color, and crisp trim'}</figcaption>
+          {projectImages.map((image, index) => (
+            <figure className={index === 0 ? 'portfolio-card large' : 'portfolio-card'} key={image.src}>
+              <img src={image.src} alt={image.alt} />
+              <figcaption>
+                <strong>{image.title}</strong>
+                <span>{image.caption}</span>
+              </figcaption>
             </figure>
           ))}
         </div>
