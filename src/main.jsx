@@ -46,7 +46,7 @@ function App() {
       <section id="top" className="hero">
         <div className="hero-copy">
           <p className="eyebrow">Medford, Oregon painting contractor • CCB #96858</p>
-          <h1>Southern Oregon painting with mountain-grade prep and a clean finish.</h1>
+          <h1>Fresh paint. Sharp lines. A home that feels cared for again.</h1>
           <p className="lead">High Mountain Painting helps Rogue Valley homeowners and property owners refresh interiors, protect exteriors, and finish every detail with steady communication from Travis and Sheryl Tibbets.</p>
           <div className="hero-actions">
             <a className="button primary" href={phoneHref}>Call for an estimate</a>
