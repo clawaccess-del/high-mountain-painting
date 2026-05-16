@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://high-mountain-painting.vercel.app/sitemap.xml
