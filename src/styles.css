@@ -59,15 +59,22 @@ main { overflow: hidden; }
   text-decoration: none;
   line-height: 1;
 }
-.brand-logo {
+.text-brand {
+  padding: .45rem .95rem .55rem;
+  border-radius: .65rem;
+  border: 2px solid rgba(255,245,216,.72);
+  background: rgba(255, 245, 216, .08);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, .24);
+}
+.brand-name {
   display: block;
-  width: clamp(17rem, 40vw, 31rem);
-  height: clamp(7.4rem, 12vw, 10.5rem);
-  object-fit: contain;
-  object-position: center;
-  border-radius: .35rem;
-  border: 2px solid rgba(255,245,216,.78);
-  box-shadow: 0 12px 30px rgba(0, 0, 0, .32);
+  color: var(--cream);
+  font-family: Anton, Impact, sans-serif;
+  font-size: clamp(2rem, 5vw, 4.5rem);
+  line-height: .9;
+  letter-spacing: .015em;
+  text-transform: uppercase;
+  text-shadow: .055em .055em 0 var(--red), .09em .09em 0 rgba(0,0,0,.7);
 }
 nav { display: flex; align-items: center; gap: 1.4rem; color: rgba(255,245,216,.86); font-size: .95rem; font-weight: 800; }
 nav a, .header-call { text-decoration: none; }
@@ -405,7 +412,7 @@ footer a { color: var(--cream); }
 }
 @media (max-width: 620px) {
   .site-header { padding-inline: .75rem; }
-  .brand-logo { width: min(94vw, 25rem); height: 8.2rem; }
+  .brand-name { font-size: clamp(1.85rem, 10vw, 3.25rem); }
   .header-call { display: none; }
   h1 { font-size: clamp(3.1rem, 17vw, 4.5rem); }
   .service-grid { grid-template-columns: 1fr; }
