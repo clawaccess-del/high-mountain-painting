@@ -56,15 +56,19 @@ function App() {
   return (
     <main>
       <header className="site-header">
-        <a className="brand" href="#top" aria-label="High Mountain Painting home">
-          <img className="brand-logo" src="/images/high-mountain-logo-from-card.jpg" alt="High Mountain Painting logo" />
-        </a>
-        <nav aria-label="Main navigation">
-          <a href="#services">Services</a>
-          <a href="#work">Process</a>
-          <a href="#contact">Contact</a>
-        </nav>
-        <a className="header-call" href={phoneHref}>Call {phone}</a>
+        <div className="top-logo-row">
+          <a className="brand" href="#top" aria-label="High Mountain Painting home">
+            <img className="brand-logo" src="/images/high-mountain-logo-from-card.jpg" alt="High Mountain Painting logo" />
+          </a>
+        </div>
+        <div className="header-nav-row">
+          <nav aria-label="Main navigation">
+            <a href="#services">Services</a>
+            <a href="#work">Process</a>
+            <a href="#contact">Contact</a>
+          </nav>
+          <a className="header-call" href={phoneHref}>Call {phone}</a>
+        </div>
       </header>
 
       <section id="top" className="hero">
